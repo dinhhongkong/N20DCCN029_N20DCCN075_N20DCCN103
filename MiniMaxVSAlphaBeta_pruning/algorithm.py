@@ -280,7 +280,6 @@ class AlphaBeta(Algorithm):
             self.current_state[px][py] = 'O'
             DISPLAYSURF.blit(ICON_O, (70 + py * 110, 220 + px * 110))
             self.player_turn = 'X'
-            self.draw_board()
             return
 
 
@@ -300,6 +299,5 @@ class AlphaBeta(Algorithm):
         self.current_state[px][py] = 'O'
         DISPLAYSURF.blit(ICON_O, (70 + py * 110, 220 + px * 110))
         self.player_turn = 'X'
-        self.draw_board()
         if self.check_winer() == None:
             return
