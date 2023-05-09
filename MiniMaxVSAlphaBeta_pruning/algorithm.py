@@ -283,8 +283,6 @@ class AlphaBeta(Algorithm):
             self.draw_board()
             return
 
-        (m, qx, qy) = self.min_alpha_beta(-2, 2)
-        print('Recommended move: X = {}, Y = {}'.format(qx, qy))
 
         if self.is_valid(px, py):
             self.current_state[px][py] = 'X'
